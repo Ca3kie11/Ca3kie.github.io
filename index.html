@@ -1,55 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ca3kie – Main Portal</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Catch – Main</title>
   <style>
-    body {
-      font-family: Georgia, serif;
-      background-color: #f0f0f0;
-      color: #111;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+    * {
       margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    h1 {
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background-color: #f9f9f9;
+      color: #111;
+      font-family: 'Georgia', serif;
+    }
+
+    header {
+      background-color: #eee;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ccc;
+    }
+
+    header h1 {
       font-size: 2rem;
+    }
+
+    header h1 a {
+      color: #000;
+      text-decoration: none;
+    }
+
+    nav a {
+      color: #555;
+      margin-left: 1.5rem;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+    main {
+      flex: 1;
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 1.6rem;
       margin-bottom: 2rem;
     }
 
-    a {
+    a.main-link {
       display: inline-block;
       margin: 1rem;
-      padding: 0.8rem 1.8rem;
-      background-color: #333;
-      color: #fff;
+      padding: 0.7rem 1.5rem;
+      background-color: #f0f0f0;
+      color: #5560d1;
+      border: 1px solid #ccc;
+      border-radius: 6px;
       text-decoration: none;
-      border-radius: 8px;
       font-size: 1rem;
       transition: background-color 0.3s ease;
+      font-family: 'Georgia', serif;
     }
 
-    a:hover {
-      background-color: #000;
+    a.main-link:hover {
+      background-color: #e0e0e0;
+    }
+
+    footer {
+      background-color: #eee;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #111;
+      padding: 3rem 0;
+      border-top: 1px solid #ccc;
+    }
+
+    footer a {
+      color: #5560d1;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 <body>
 
-  <h1>Welcome to <em>Ca3kie</em></h1>
+  <header>
+    <h1><a href="index.html">The Catch</a></h1>
+    <nav>
+      <!-- You can leave it empty or add Home/About if needed -->
+    </nav>
+  </header>
 
-  <a href="https://www.instagram.com/Ca3kie_11" target="_blank">
-    Visit Instagram
-  </a>
+  <main>
+    <h2>Welcome to The Catch 🎭</h2>
+    <a class="main-link" href="https://instagram.com/YOUR_USERNAME" target="_blank">📸 Instagram</a>
+    <a class="main-link" href="The Catch/The Catch Dark/index.html">📖 Enter the Story</a>
+  </main>
 
-  <a href="The Catch/The Catch Light/index.html">
-    Enter The Catch
-  </a>
+  <footer>
+    <p>&copy; 2025 Ca3kie – All rights reserved.</p>
+    <p>For questions, feedback, or fan messages: 
+      <a href="mailto:contactmeca3kie@gmail.com">contactmeca3kie@gmail.com</a>
+    </p>
+  </footer>
 
 </body>
 </html>
